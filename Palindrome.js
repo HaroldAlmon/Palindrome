@@ -17,7 +17,8 @@ function evalText() {
 	return;
 	
 	function isPal(text) {
-		var i, j; // Used as left and right indices in the string.
+		// Used as left and right indices in the string.
+		var i, j; 
 		var result = true;
 
 		// Treat upper and lowercase as equal...
@@ -33,7 +34,7 @@ function evalText() {
 		// the string...
 		for (; i < j; i++, j--) {
 			if (text.charAt(i) !== text.charAt(j)) {
-				// Okay, chars fo not match, it's not a palindrome...
+				// Okay, chars do not match, it's not a palindrome...
 				result = false;
 				break;
 			}
@@ -41,3 +42,6 @@ function evalText() {
 		return result;
 	}
 }
+
+// Sample text: Ah, Satan sees Natasha.
+// Go hang a salami, I'a lasgna hog.
