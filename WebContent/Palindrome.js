@@ -17,8 +17,7 @@ function evalText() {
 	return;
 	
 	function isPal(text) {
-		// Used as left and right indices in the string.
-		var i, j; 
+		var i; 
 		var result = true;
 
 		// Treat upper and lowercase as equal...
@@ -27,14 +26,9 @@ function evalText() {
 		// Strip out non-alpha characters...
 		text = text.replace(/[^A-Za-z0-9]/g, '');
 		
-		i = 0;
-		j = text.length - 1;
 
-		// Move towards the center of the string from the start and end of
-		// the string...
-		for (; i < j; i++, j--) {
-			if (text.charAt(i) !== text.charAt(j)) {
-				// Okay, chars do not match, it's not a palindrome...
+		for (i = 0; i < text.length / 2; i++) {
+			if (text.charAt(i) !== text.charAt(text.length - i - 1)) {
 				result = false;
 				break;
 			}

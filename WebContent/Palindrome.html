@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <!-- This web page determines if a text string entered by the user is a palindrome. 
 	 Treat upper and lowercase as equal and ignore non-alpha characters. -->
-<!-- "Go Hang a Salami! I'm a Lasagna Hog" -->
 <html>
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Palindrome Evaluator</title>
 </head>
 <body style="font-family: verdana;">
-	Enter text:
-	<input type="text" size="60" maxlength="200" id="inputField"  autofocus="autofocus">
+<div>
+	<p><b>Sample Palindromes:</b></p>
+	<p>Go hang a salami I'm a lasagna hog</p>
+	<p>Do good? I? No! Evil anon I deliver. I maim nine more hero-men in Saginaw, sanitary sword a-tuck, Carol, I - lo! - rack, cut a drowsy rat in Aswan. I gas nine more hero-men in Miami. Reviled, I (Nona) live on. I do, O God!<p>
+	<p><b>Enter text:</b><p>
+</div>
+	<input type="text" size="60" maxlength="2000" id="inputField"  autofocus="autofocus">
 	<button onclick="evalText()">Evaluate text</button>
 	<p id="result"></p>
 	<script src="Palindrome.js" type="text/javascript"></script>
